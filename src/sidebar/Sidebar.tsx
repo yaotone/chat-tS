@@ -1,16 +1,17 @@
 import React, { useState } from 'react'
 import './Sidebar.css'
+import SidebarHeader from './SidebarHeader/SidebarHeader';
 
 export default function Sidebar(){
     const[width, setWidth] = useState<number>(250)
 
     function onMouseMove(event: MouseEvent){
         const newWidth = event.clientX;
-        if((newWidth < 251) && (newWidth >= 83)){
+        if((newWidth < 251) && (newWidth >= 84)){
             newWidth === 83 ? setWidth(80) : setWidth(250)
         }
-        else if((newWidth >= 81) && (newWidth < 83)){
-            newWidth === 82 ? setWidth(250) : setWidth(81)
+        else if((newWidth >= 81) && (newWidth < 84)){
+            newWidth === 83 ? setWidth(250) : setWidth(80)
         }
         else{
             setWidth(newWidth)
@@ -39,6 +40,7 @@ export default function Sidebar(){
                     >
                         <div className='sidebar_border_inner'></div>
                     </div>
+                    <SidebarHeader width={width}></SidebarHeader>
                 </div>
             </div>
         </>
