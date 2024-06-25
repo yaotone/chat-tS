@@ -35,3 +35,11 @@
     background-color: rgb(173, 173, 173);
     border-radius: 6px;
 }
+
+.Sidebar_main{
+    width: 100%;
+    height: 500px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}

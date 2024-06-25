@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
 import './Sidebar.css'
 import SidebarHeader from './SidebarHeader/SidebarHeader';
+import SidebarUser from './SidebarUser/SidebarUser';
+import MenuBar from './MenuBar/MenuBar';
 
 export default function Sidebar(){
+    const[isMenuActive, setIsMenuActive] = useState<boolean>(false)
     const[width, setWidth] = useState<number>(250)
 
     function onMouseMove(event: MouseEvent){
@@ -40,9 +43,15 @@ export default function Sidebar(){
                     >
                         <div className='sidebar_border_inner'></div>
                     </div>
-                    <SidebarHeader width={width}></SidebarHeader>
+                    <SidebarHeader width={width} isMenuActive = {isMenuActive} setIsMenuActive={setIsMenuActive}></SidebarHeader>
+                    <div className='Sidebar_main'>
+                        <SidebarUser></SidebarUser>
+                        <SidebarUser></SidebarUser>
+                        <SidebarUser></SidebarUser>
+                    </div>
                 </div>
             </div>
+            <MenuBar isActive = {isMenuActive}></MenuBar>
         </>
     )
 }

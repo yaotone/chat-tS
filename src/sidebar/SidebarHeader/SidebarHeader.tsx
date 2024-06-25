@@ -1,14 +1,13 @@
-import { useState } from 'react'
 import './SidebarHeader.css'
 // import loupe from '../../icons/loupe.svg'
 
 interface SidebarHeaderProps {
     width: number,
+    isMenuActive: boolean
+    setIsMenuActive: Function
 }
 
-export default function SidebarHeader({width}: SidebarHeaderProps){
-
-    const[isMenuActive, setIsMenuActive] = useState<boolean>(false)
+export default function SidebarHeader({width, isMenuActive, setIsMenuActive}: SidebarHeaderProps){
 
     return(
         <div className='SidebarHeader_container'>

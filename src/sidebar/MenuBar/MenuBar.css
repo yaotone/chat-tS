@@ -1,0 +1,6 @@
+.MenuBar_container{
+    width: 100dvw;
+    height: 100dvh;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.1);
+}

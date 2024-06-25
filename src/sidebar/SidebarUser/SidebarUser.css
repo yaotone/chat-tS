@@ -1,0 +1,69 @@
+.SidebarUser_container{
+    max-width: 100%;
+    height: 74px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+    overflow: hidden;
+}
+
+.SidebarUser_container:hover{
+    background-color: rgba(255, 255, 255, 0.10);
+    transition: 0.2s;
+}
+
+.SidebarUser_avatar{
+    width: 58px;
+    height: 58px;
+    background-color: black;
+    border-radius: 50%;
+    margin-left: 8px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    flex-shrink: 0;
+}
+
+.SidebarUser_info{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 58px;
+    margin-left: 16px;
+    overflow: hidden;
+}
+
+.Sidebar_username{
+    font-size: 20px;
+    font-weight: 400;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.Sidebar_last_message{
+    color: #B0B0B0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.SidebarUser_data{
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-grow: 1;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.Sidebar_date{
+    width: fit-content;
+    font-size: 14px;
+    color: gray;
+    flex-shrink: 0;
+    margin-right: 14px;
+}
