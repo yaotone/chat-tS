@@ -51,7 +51,7 @@ export default function Sidebar(){
                     </div>
                 </div>
             </div>
-            <MenuBar isActive = {isMenuActive}></MenuBar>
+            <MenuBar isActive = {isMenuActive} setIsActive={setIsMenuActive}></MenuBar>
         </>
     )
 }

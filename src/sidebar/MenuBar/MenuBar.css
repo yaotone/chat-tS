@@ -1,6 +1,25 @@
-.MenuBar_container{
-    width: 100dvw;
+.MenuBar_background{
+    width: 100%;
     height: 100dvh;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.MenuBar{
+    position: absolute;
+    left: 0px;
+    width: 0px;
+    height: 100dvh;
+    background-color: rgb(5, 0, 16);
+    transition: 0.3s;
+}
+
+.MenuBar_active{
+    position: absolute;
+    left: 0px;
+    width: 300px;
+    height: 100dvh;
+    background-color: rgb(26, 24, 30);
+    z-index: 100;
+    transition: 0.3s;
 }

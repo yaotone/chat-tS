@@ -2,14 +2,17 @@ import './MenuBar.css'
 
 interface MenuBarData{
     isActive: boolean
+    setIsActive: Function
 }
 
-export default function MenuBar({isActive}: MenuBarData){
+export default function MenuBar({isActive, setIsActive}: MenuBarData){
     return(
         <>
-            {isActive && 
-            <div className='MenuBar_container'>
+            <div className={isActive ? 'MenuBar_active' : 'MenuBar'}>
 
+            </div>
+            {isActive && 
+            <div className='MenuBar_background' onClick={()=>setIsActive(false)}>
             </div>}
         </>
     )
