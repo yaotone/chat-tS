@@ -11,7 +11,7 @@ export default function SidebarUser(){
                     <div className='Sidebar_username'>Yaotone</div>
                     <div className='Sidebar_date'>21.02.2024</div>
                 </div>
-                <div className='Sidebar_last_message'>Привет fjewmnflkwemlk mewdfkwemlfkmewlk ewflkweml</div>
+                <div className='Sidebar_last_message'>Привет нашел вчера такое</div>
             </div>
         </div>
     )
