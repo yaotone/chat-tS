@@ -1,0 +1,97 @@
+
+.UserAddInfo_background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.UserAddInfo_container{
+    width: 550px;
+    height: 90%;
+    /* background-image: 
+    linear-gradient(to top,rgb(20, 20, 50), rgb(30, 30, 55)); */
+    background-image: 
+    linear-gradient(to top,rgb(31, 31, 31), rgb(48, 48, 63));
+    border-radius: 10px;
+    animation-name: appear;
+    animation-duration: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@keyframes appear{
+    from{
+        margin-bottom: 1500px;
+    }
+    to{
+        margin-bottom: 0px;
+    }
+}
+
+.UserAddInfo_avatar{
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+
+.UserAddInfo_name{
+    font-size: 24px;
+    color: white;
+    cursor: default;
+}
+
+.UserAddInfo_special_name{
+    color: gray;
+    cursor: default;
+}
+
+.UserAddInfo_name_container{
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.UserAddInfo_action_icon{
+    width: 22px;
+    height: 22px;
+    background-size: contain;
+    border: 1px solid white;
+    background-color: rgb(48, 48, 63);
+    border-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    left: auto;
+    right: -40px;
+    transition: 0.3s;
+}
+
+.UserAddInfo_action_icon:hover{
+    transform: scale(110%);
+    transition: 0.3s;
+}
+
+.UserAddInfo_special_name_container{
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.UserAddInfo_name_input{
+    padding: 0;
+    border: 0px;
+    outline: 0;
+    border-bottom: 1px solid #6ab3f3;
+    background-color: transparent;
+    color: white;
+    font-size: 24px;
+    width: 350px;
+}

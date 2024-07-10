@@ -70,7 +70,7 @@
 }
 
 .SidebarHeader_search_wrapper:focus-within{
-    outline: 2px solid  #626262;
+    outline: 2px solid #6ab3f3;
     transition: 0.1s ease;
 }
 

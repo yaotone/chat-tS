@@ -22,7 +22,7 @@
     width: 1.5px;
     height: 100%;
     flex-shrink: 0;
-    background-color: black;
+    background-color: #00305a;
     /* background-color: #555555; */
     cursor: grab;
     display: flex;
