@@ -1,0 +1,50 @@
+.ExitButton{
+    width: 300px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0);
+    margin-bottom: 16px;
+    transition: 0.3s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.ExitButton:hover{
+    background-color: rgba(255, 255, 255, 0.08);
+    transition: 0.3s;
+}
+
+.activeButton{
+    transform: translateY(1px);
+}
+
+.ExitButton_icon{
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    transition: 0.2s ;
+}
+
+.ExitButton:hover .ExitButton_icon{
+    margin-left: 260px;
+    transition: 0.2s;
+}
+
+.ExitButton_text{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    left: 0px;
+    transform: translateX(-100%);
+    transition: 0.2s;
+}
+
+.ExitButton:hover .ExitButton_text{
+    left: 16px;
+    transform: translateX(0%);
+    transition: 0.2s;
+}

@@ -74,6 +74,7 @@
     text-wrap: wrap;
     overflow-wrap: break-word;
     word-break: break-all;
+    overflow: visible;
 }
 
 .MenuBarUser_mask{
@@ -89,7 +90,7 @@
     transition: 0.3s;
 }
 
-.MenuBarUser_mask:hover{
+.mask_active{
     background-color: rgba(0, 0, 0, 0.6);
     transition: 0.3s;
 }
@@ -160,4 +161,94 @@
 .edit_popup::after {
     border-right: 7.5px solid rgb(26, 24, 30);/*длинна черног*/
     right: 30px;
+}
+
+input[type='file']{
+    display: none;
+}
+
+.MenuBarUser_avatar_input{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 3;
+    top: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.MenuBarUser_change_buttons{
+    width: 100%;
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #6ab3f3;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+}
+
+.MenuBarUser_change_button{
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: 0.4s;
+    flex-shrink: 0;
+}
+
+.MenuBarUser_change_button div{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    flex-shrink: 0;
+}
+
+.change_buttons_hidden{
+    transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.MenuBarUser_change_button_horizontal{
+    margin-left: 10px;
+    width: 0px;
+    height: 1px;
+    background-color: #6ab3f3;
+    transition: 0.4s;
+}
+
+.MenuBarUser_change_button:hover ~ 
+.MenuBarUser_change_button_horizontal{
+    width: 100px;
+    transition: 0.4s;
+}
+
+.MenuBarUser_name_input{
+    border: 0px;
+    outline: 0px;
+    padding: 0px;
+    background-color: transparent;
+    color: white;
+    border-bottom: 1px solid #6ab3f3;
+    width: 230px;
+    visibility: visible;
+    transition: 0.3s;
+    display: flex;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.input_hidden{
+    border-bottom: 0px solid #6ab3f3;
+    transition: 0.3s;
+    visibility: hidden;
+}
+
+#name_input{
+    font-size: 24px;
 }

@@ -6,7 +6,7 @@ import MenuBar from './MenuBar/MenuBar';
 
 export default function Sidebar(){
     const[isMenuActive, setIsMenuActive] = useState<boolean>(false)
-    const[width, setWidth] = useState<number>(250)
+    const[width, setWidth] = useState<number>(280)
 
     function onMouseMove(event: MouseEvent){
         const newWidth = event.clientX;

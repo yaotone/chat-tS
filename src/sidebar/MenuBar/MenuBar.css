@@ -15,6 +15,9 @@
     linear-gradient(to top left, rgb(26, 24, 30), rgb(48, 41, 61));
     transition: 0.3s;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .MenuBar_active{
