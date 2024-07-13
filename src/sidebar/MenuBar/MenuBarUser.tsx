@@ -28,7 +28,7 @@ export default function MenuBarUser(){
                 <div className='MenuBarUser_name' onClick={()=>setEditing(1)} ref={nameRef}>
                     {editing === 1 ? 
                     <input type='text' className={editing ? 'MenuBarUser_name_input' : 'MenuBarUser_name_input input_hidden'} id='name_input'
-                    style={{height: `${nameRef.current?.scrollHeight-1}px`}}
+                    style={{height: `${nameRef.current?.scrollHeight-1.5}px`}}
                     placeholder='Введите новое имя' autoComplete='off' maxLength={16}/> :
                     <div>Yaotone</div>}
 
@@ -41,7 +41,7 @@ export default function MenuBarUser(){
                 <div className='MenuBarUser_special_name' onClick={()=>setEditing(2)} ref={specialNameRef}>
                     {editing === 2 ? 
                     <input type="text" className='MenuBarUser_name_input' id='special_name_input'
-                    style={{height: `${specialNameRef.current?.offsetHeight-1}px`}}
+                    style={{height: `${specialNameRef.current?.offsetHeight-1.5}px`}}
                     placeholder='Введите новый псевдоним' autoComplete='off' maxLength={25}/> : 
                     <div>@blessed_yaotone</div>}
 

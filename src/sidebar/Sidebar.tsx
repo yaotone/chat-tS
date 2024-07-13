@@ -7,6 +7,7 @@ import MenuBar from './MenuBar/MenuBar';
 export default function Sidebar(){
     const[isMenuActive, setIsMenuActive] = useState<boolean>(false)
     const[width, setWidth] = useState<number>(280)
+    const[isGrabbed, setIsGrabbed] = useState<boolean>(false)
 
     function onMouseMove(event: MouseEvent){
         const newWidth = event.clientX;
@@ -22,11 +23,13 @@ export default function Sidebar(){
     }
 
     function onMouseUp() {
+        setIsGrabbed(false)
         document.body.style.cursor = 'default'
         document.removeEventListener('mousemove', onMouseMove)
     }
 
     function onMouseDown(event: React.MouseEvent){
+        setIsGrabbed(true)
         event.preventDefault()
         document.body.style.cursor = 'grab';
         document.addEventListener("mousemove", onMouseMove);
@@ -37,7 +40,7 @@ export default function Sidebar(){
         <>
             <div className='Sidebar_container' style={{width: `${width}px`}}>
                 <div className='sidebar'>
-                    <div className='sidebar_border' 
+                    <div className={isGrabbed ? 'sidebar_border sidebar_border_moving' : 'sidebar_border'} 
                     draggable = 'false' 
                     onMouseDown={onMouseDown}
                     >

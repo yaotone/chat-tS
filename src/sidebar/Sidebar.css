@@ -19,10 +19,10 @@
 }
 
 .sidebar_border{
-    width: 1.5px;
+    width: 3px;
     height: 100%;
     flex-shrink: 0;
-    background-color: #00305a;
+    background-color: #00305a00;
     /* background-color: #555555; */
     cursor: grab;
     display: flex;
@@ -30,6 +30,16 @@
     justify-content: center;
     position: absolute;
     right: 0px;
+    transition: 0.2s;
+}
+
+.sidebar_border:hover{
+    background-color: #00305a;
+    transition: 0.2s;
+}
+
+.sidebar_border_moving{
+    background-color: #00305a;
 }
 
 /* .sidebar_border_inner{
