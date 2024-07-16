@@ -1,0 +1,85 @@
+.MainFooter{
+    width: calc(100%-40px);
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: 0px;
+    /* background-color: rgb(23, 23, 24); */
+    background-image:     
+    linear-gradient(to right, rgb(30, 33, 39), rgb(42, 43, 49));
+    display: flex;
+    flex-shrink: 0;
+    border-top: 1px solid rgb(81, 81, 81);
+    padding: 10px 20px 10px 20px;
+    align-items: center;
+}
+
+.MainFooter_input{
+    font-family: "Victor Mono", monospace;
+    padding: 0;
+    padding: 5px 10px 5px 10px;
+    width: 90%;
+    min-width: 300px;
+    min-height: calc(1em + 10px);
+    height: fit-content;
+    max-height: calc(3em + 30px);
+    display: flex;
+    resize: none;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    line-height: 30px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    background-color: transparent;
+    color: white;
+    transition: 0.3s;
+    margin-right: 42px;
+    margin-left: 0px;
+}
+
+.MainFooter_input:focus{
+    border: 1px solid #6ab3f3;
+    transition: 0.3s;
+}
+
+.MainFooter_send_wrapper{
+    display: flex;
+    flex-shrink: 0;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: rgb(36, 36, 36);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.MainFooter_send_wrapper:hover{
+    background-color: rgb(64, 64, 64);
+    transition: 0.3s;
+}
+
+.MainFooter_send_wrapper:hover #send_icon1{
+    transform: translateX(100%) translateY(-50%);
+    transition: 0.15s;
+}
+
+.MainFooter_send_icon{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    transition: 0.15s;
+}
+
+#send_icon2{
+    transform: translateX(-170%) translateY(-50%);
+}
+
+.MainFooter_send_wrapper:hover #send_icon2{
+    transform: translateX(-50%) translateY(-50%);
+    transition: 0.15s;
+}
