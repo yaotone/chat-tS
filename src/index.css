@@ -7,4 +7,6 @@ body{
     width: 100%;
     height: 100dvh;
     display: flex;
+    background: 
+    linear-gradient(to bottom,#3e3a53, #2d2339, #332339);
 }

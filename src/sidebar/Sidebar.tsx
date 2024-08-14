@@ -11,11 +11,11 @@ export default function Sidebar(){
 
     function onMouseMove(event: MouseEvent){
         const newWidth = event.clientX;
-        if((newWidth < 251) && (newWidth >= 84)){
+        if((newWidth < 251) && (newWidth >= 88)){
             newWidth === 83 ? setWidth(80) : setWidth(250)
         }
-        else if((newWidth >= 81) && (newWidth < 84)){
-            newWidth === 83 ? setWidth(250) : setWidth(80)
+        else if((newWidth >= 81) && (newWidth < 88)){
+            newWidth === 87 ? setWidth(250) : setWidth(80)
         }
         else{
             setWidth(newWidth)
@@ -40,11 +40,11 @@ export default function Sidebar(){
         <>
             <div className='Sidebar_container' style={{width: `${width}px`}}>
                 <div className='sidebar'>
-                    <div className={isGrabbed ? 'sidebar_border sidebar_border_moving' : 'sidebar_border'} 
+                    <div className='sidebar_border'
                     draggable = 'false' 
                     onMouseDown={onMouseDown}
                     >
-                        <div className='sidebar_border_inner'></div>
+                        <div className={isGrabbed ? 'sidebar_border_inner border_inner_visible' : 'sidebar_border_inner'}></div>
                     </div>
                     <SidebarHeader width={width} isMenuActive = {isMenuActive} setIsMenuActive={setIsMenuActive}></SidebarHeader>
                     <div className='Sidebar_main'>
