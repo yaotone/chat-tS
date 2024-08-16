@@ -1,0 +1,67 @@
+.Massage{
+    width: fit-content;
+    max-width: calc(50% - 32px);
+    height: min-content;
+    min-height: 20px;
+    padding: 8px;
+    /* background: 
+    linear-gradient(to right, rgb(147, 35, 216), #843af3,
+    rgb(96, 60, 255)); */
+    /* background: #026afc; */
+    background: rgb(147, 35, 216);
+    color: white;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.Message_info{
+    margin-top: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    width: fit-content;
+    height: 8px;
+    /* background-color: #6ab3f3; */
+    display: flex;
+    font-size: 12px;
+    font-weight: 100;
+    color: rgb(198, 198, 198);
+    gap: 4px;
+    align-items: center;
+}
+
+.Message_text{
+    overflow: hidden;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.Message_info_status{
+    color: #00e4d5;
+
+}
+
+.Message_wrapper{
+    width: 100%;
+    height: fit-content;
+}
+
+.status_ticks{
+    height: 16px;
+    width: 16px;
+}
+
+.Message_triangle{
+    clip-path: polygon(50% 80%, 0 0, 100% 0);
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    background-color: rgb(147, 35, 216);
+    left: auto;
+    right: -9px;
+    bottom: -4px;
+    transform: rotate(-60deg);
+}
