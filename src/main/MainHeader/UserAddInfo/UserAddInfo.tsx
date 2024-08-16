@@ -24,7 +24,7 @@ export default function UserAddInfo({isUserInfoShown, setIsUserInfoShown}:IAddit
     }
 
     function copySpecialName(){
-        navigator.clipboard.writeText('bloodyGamer2005')
+        navigator.clipboard.writeText('@bloodyGamer2005')
     }
 
     function handleNameChange(){
