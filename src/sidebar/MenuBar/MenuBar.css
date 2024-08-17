@@ -37,3 +37,10 @@
     justify-content: space-between;
     overflow: hidden;
 }
+
+
+@media (max-width: 370px){
+    .MenuBar_active{
+        width: 250px;
+    }
+}

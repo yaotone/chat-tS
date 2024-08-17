@@ -48,3 +48,46 @@
     transform: translateX(0%);
     transition: 0.2s;
 }
+
+@media (max-width: 370px){
+    .ExitButton{
+        width: 250px;
+    }
+    .ExitButton_text{
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 375px){
+}
+
+@media(max-width:431px){
+    .ExitButton{
+        justify-content: space-around;
+    }
+
+    .ExitButton_icon{
+        transform: translateX(0%);
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .ExitButton:hover .ExitButton_icon{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .ExitButton_text{
+        position: relative;
+        left: 0px;
+        transform: translateX(0%);
+    }
+    .ExitButton:hover .ExitButton_text{
+        left: 0px;
+        transform: translateX(0%);
+    }
+
+    .ExitButton:hover{
+        background-color: rgba(255, 255, 255, 0);
+    }
+}

@@ -68,3 +68,9 @@
     flex-shrink: 0;
     margin-right: 14px;
 }
+
+@media (max-width:431px){
+    .SidebarUser_container:hover{
+        background-color: rgba(255, 255, 255, 0);
+    }
+}

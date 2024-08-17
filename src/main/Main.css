@@ -8,4 +8,21 @@
     flex-direction: column;
     border-radius: 10px 0 0 10px;
     margin-left: 4px;
+    z-index: 10;
+}
+
+@media (max-width:431px){
+    .Main_container{
+        min-width: 100dvw;
+        min-height: 100dvh;
+        border-radius: 0px;
+        margin-left: 0px;
+        position: absolute;
+        left: 100dvw;
+    }
+
+    .Main_container_active{
+        left: 0dvw;
+        transition: 0.4s;
+    }
 }

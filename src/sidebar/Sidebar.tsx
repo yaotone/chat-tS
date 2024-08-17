@@ -4,7 +4,12 @@ import SidebarHeader from './SidebarHeader/SidebarHeader';
 import SidebarUser from './SidebarUser/SidebarUser';
 import MenuBar from './MenuBar/MenuBar';
 
-export default function Sidebar(){
+interface ISidebar{
+    activeChat: number,
+    setActiveChat: Function
+}
+
+export default function Sidebar({activeChat, setActiveChat}: ISidebar){
     const[isMenuActive, setIsMenuActive] = useState<boolean>(false)
     const[width, setWidth] = useState<number>(280)
     const[isGrabbed, setIsGrabbed] = useState<boolean>(false)
@@ -36,9 +41,11 @@ export default function Sidebar(){
         document.addEventListener("mouseup", onMouseUp);
     }
 
+    console.log(activeChat)
+
     return(
         <>
-            <div className='Sidebar_container' style={{width: `${width}px`}}>
+            <div className={'Sidebar_container'} style={{width: `${width}px`}}>
                 <div className='sidebar'>
                     <div className='sidebar_border'
                     draggable = 'false' 
@@ -48,9 +55,9 @@ export default function Sidebar(){
                     </div>
                     <SidebarHeader width={width} isMenuActive = {isMenuActive} setIsMenuActive={setIsMenuActive}></SidebarHeader>
                     <div className='Sidebar_main'>
-                        <SidebarUser></SidebarUser>
-                        <SidebarUser></SidebarUser>
-                        <SidebarUser></SidebarUser>
+                        <SidebarUser activeChat={activeChat} setActiveChat={setActiveChat} index={0}></SidebarUser>
+                        <SidebarUser activeChat={activeChat} setActiveChat={setActiveChat} index={1}></SidebarUser>
+                        <SidebarUser activeChat={activeChat} setActiveChat={setActiveChat} index={2}></SidebarUser>
                     </div>
                 </div>
             </div>
